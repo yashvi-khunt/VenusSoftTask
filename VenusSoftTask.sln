@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VenusSoftTask", "VenusSoftTask\VenusSoftTask.csproj", "{1594B606-C4B4-45D8-823D-63219DA0EDF5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1594B606-C4B4-45D8-823D-63219DA0EDF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1594B606-C4B4-45D8-823D-63219DA0EDF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1594B606-C4B4-45D8-823D-63219DA0EDF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1594B606-C4B4-45D8-823D-63219DA0EDF5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
