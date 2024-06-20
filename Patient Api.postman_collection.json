@@ -1,0 +1,137 @@
+{
+	"info": {
+		"_postman_id": "471fc053-c545-4e31-b330-bee74000b86f",
+		"name": "Patient Api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23827337"
+	},
+	"item": [
+		{
+			"name": "Get All Patients",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5162/API/patient/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5162",
+					"path": [
+						"API",
+						"patient",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Patient By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5162/API/patient?id=4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5162",
+					"path": [
+						"API",
+						"patient"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Patient",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"firstName\": \"string\",\n  \"lastName\": \"string\",\n  \"prefix\": \"string\",\n  \"dob\": \"2024-06-20\",\n  \"address\": \"string\",\n  \"email\": \"user@example.com\",\n  \"phone\": \"9643203069\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5162/API/patient/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5162",
+					"path": [
+						"API",
+						"patient",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Patient",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\":4,\n  \"firstName\": \"STRING1\",\n  \"lastName\": \"STRING2\",\n  \"prefix\": \"MRS.\",\n  \"dob\": \"2024-06-20\",\n  \"address\": \"abc\",\n  \"email\": \"STRING@example.com\",\n  \"phone\": \"4876843753\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5162/API/patient",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5162",
+					"path": [
+						"API",
+						"patient"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Patient",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5162/API/patient/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5162",
+					"path": [
+						"API",
+						"patient",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
